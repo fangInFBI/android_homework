@@ -18,8 +18,10 @@ public class StartImg  extends Activity{
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent = new Intent(StartImg.this, MainActivity.class);
-                    StartImg.this.startActivity(intent);
+                    // Intent intent = new Intent(StartImg.this, MainActivity.class);
+                    // Jump to Login Screen
+                    Intent toLogin = new Intent(StartImg.this, LoginActivity.class);
+                    StartImg.this.startActivity(toLogin);
                     StartImg.this.finish();
                 }
             }, SPLASH_DISPLAY_LENGHT);

@@ -9,21 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".Main2Activity"
-            android:label="分手大师"></activity>
-
-        <activity android:name=".StartImg"
+            android:label="分手大师" />
+        <activity
+            android:name=".StartImg"
             android:label="分手大师">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>
