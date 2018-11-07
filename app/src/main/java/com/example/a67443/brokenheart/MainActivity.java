@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseUser;
 import com.roger.catloadinglibrary.CatLoadingView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        
 
 
         Button bt = (Button)findViewById(R.id.button);

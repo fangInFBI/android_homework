@@ -4,4 +4,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="text_login_button">Login</string>
+    <string name="text_signup_button">Sign Up</string>
+    <string name="hint_email_editview">Email</string>
+    <string name="hint_password_editview">Password</string>
 </resources>
