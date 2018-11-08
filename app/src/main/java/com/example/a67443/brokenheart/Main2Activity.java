@@ -38,6 +38,8 @@ public class Main2Activity extends AppCompatActivity {
 
                     Button bt2 = (Button)findViewById(R.id.button2);
                     bt2.setVisibility(View.INVISIBLE);
+                    Button bt3 = (Button)findViewById(R.id.button3);
+                    bt3.setVisibility(View.VISIBLE);
                     return true;
             }
             return false;
@@ -61,6 +63,16 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(in);
             }
         });
+        Button bt1 = (Button)findViewById(R.id.button3);
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Main2Activity.this,ChatActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 
 }
