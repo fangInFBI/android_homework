@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/user_email_for_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email_editview"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/user_password_for_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password_editview"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/user_email_for_login"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_login_button"
+        app:layout_constraintTop_toBottomOf="@+id/user_password_for_login"/>
+
+    <Button
+        android:id="@+id/button_to_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_signup_button"
+        app:layout_constraintTop_toBottomOf="@+id/button_login"/>
+
+
+</android.support.constraint.ConstraintLayout>
