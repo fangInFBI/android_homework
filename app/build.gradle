@@ -34,6 +34,8 @@ dependencies {
     implementation 'com.roger.catloadinglibrary:catloadinglibrary:1.0.4'
     implementation 'com.google.firebase:firebase-core:16.0.5'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.code.gson:gson:2.2.4'//Gson解析依赖
+    implementation 'com.alibaba:fastjson:1.2.31'
 }
 
 apply plugin: 'com.google.gms.google-services'
